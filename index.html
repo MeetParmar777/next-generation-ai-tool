@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AI - Real Estate AI Automation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "primary": "#1E40AF",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .subtle-gradient { background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%); }
+        .hero-gradient { background: radial-gradient(circle at top right, rgba(43, 108, 238, 0.05), transparent); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-background-dark/80">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<div class="flex items-center gap-2.5">
+<div class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-2xl" style="">domain_verification</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white" style="">Logo</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#" style="">Features</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#" style="">Solutions</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#" style="">How it Works</a>
+<a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors" href="#" style="">Testimonials</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-primary/25 hover:bg-primary/90 transition-all" style="">Book a Demo</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative overflow-hidden hero-gradient pt-16 pb-24 lg:pt-24 lg:pb-32">
+<div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="max-w-[max-content] inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary" style="">
+<span class="material-symbols-outlined text-sm" style="">bolt</span> Next-Gen Real Estate AI
+                </div>
+<h1 class="text-5xl font-black leading-[1.1] tracking-tight text-slate-900 lg:text-7xl" style="">
+                    Never Lose a <span class="text-primary" style="">Property Lead</span> Again
+                </h1>
+<p class="text-lg leading-relaxed text-slate-600 max-w-xl" style=""><div>We help real estate agencies respond instantly, qualify buyers, and book more property viewings automatically using AI.</div></p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-white shadow-xl shadow-primary/30 hover:scale-[1.02] transition-transform" style="">
+                        Book a Free Demo <span class="material-symbols-outlined" style="">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-8 py-4 text-base font-bold text-slate-700 hover:bg-slate-50 transition-colors" style="">
+<span class="material-symbols-outlined" style="">play_circle</span> Watch How It Works
+                    </button>
+</div>
+<div class="flex items-center gap-4 text-sm text-slate-500">
+<div class="flex -space-x-2">
+<img class="h-8 w-8 rounded-full border-2 border-white object-cover" data-alt="Client avatar smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP4bXvrl70PpoNeS1rcL0xZpuRkFgnVNacnZuavxj7a6ymF-IiyZw8wTT5uDAY7hz2SvlBS6q8ElhNVXkEbfkdFKSfY5ow75wilvVdolUKVqSFO1qJVDD3X9-I-YgUb_XCgsKXZh2IpR5cL4QkNCmtDRxSob_nUVhU0LoSRp0VrywqPYjqiJ1b8nRmAK_ZGBvUJMFwRgpvsnUnkWMHjeyXHTi0BK_OvMAT_L08So6adVTl0pSZEi3dZn2a6vp-mgu2IDOKXySb_UM" style="">
+<img class="h-8 w-8 rounded-full border-2 border-white object-cover" data-alt="Client avatar professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQpwFZYTWbi1iGmII7UIDC-xf1quJrgBBRP1YwaRANOsckDKIA-qkoVWCganYKkxf_V4A00hNgcygC_UQThPsM2_Q_Sy3zPM8OJ78LNFs4MGgoTzW6sKFCLIry4aGaFWLmZo7ee7DbPVH-bCEGEZLpReC95PQaeJjxUOqUU_rTM4iUZM7FnOfWzyvrzilBvXEx-B7lBPlSbryoGknVNBeFtDmAEBJ_iZgNq8GjfYkZzXqvFObyFtMdz4fmwdyuJLuNrQ0dq3Hev0s" style="">
+<img class="h-8 w-8 rounded-full border-2 border-white object-cover" data-alt="Client avatar entrepreneur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHlZ5O88GwN7SqTass6-A-IGhzGMzgWD7pGlOUHsLyffc2cbsFKCIqlhniRN8wpyf-Mm3J549bN7udT6UFl0VG1-l5panPTWTirPFEJz9MmgkUTiY_8-qk7HUOQ15WV-TIaANnm3t7B7BTWoTxJtn1W81ZaXGI2cnACydt-0eXOrwEFi5TgOIUBF6FoXHER_iVzBfFzxrngXPmN5P6RsLKP1BSGoldXOZAqJbC1WMHI5i5Ep3kS8wxJrp7DMoLqss3OVzIgMrMnZ0" style="">
+</div>
+<span class="" style="">Trusted by 500+ Top Real Estate Agencies</span>
+</div>
+</div>
+<div class="relative lg:ml-auto">
+<div class="rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl">
+<img class="rounded-xl object-cover w-full h-auto" data-alt="Modern AI dashboard showing real estate lead analytics and graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd15yk5ijfyo3BZNeYpme0Ukhu74Us_9VV_J011J7o2Ceqc0sBDfwi0zbrhxUlYFgZfN-rc3Rm1Y7BVbmqHQVxXWuo3bU8Hrak5tL_YcC2qw4kX_CwxxwY8q580TOmgIC9eYKwM-aHu4DlatwZy5vy8IX3_ihsTpomaVvxqs2BmR3cWEt98VZXsmlb6KQ4NYE3ap-S-BMyXo-NCkomsM0DvyoWBiWWjhq4mgq04KwGtF03tPxc1V2fWlnrT5RElKTkKrzIMMk3mps" style="">
+</div>
+<!-- Floating Card Decoration -->
+<div class="absolute -bottom-6 -left-6 rounded-xl bg-white p-4 shadow-xl border border-slate-100 max-w-[200px] hidden sm:block">
+<div class="flex items-center gap-3 mb-2">
+<div class="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+<span class="material-symbols-outlined text-sm" style="">calendar_month</span>
+</div>
+<span class="text-xs font-bold" style="">New Booking</span>
+</div>
+<p class="text-[10px] text-slate-500 font-medium" style="">Viewing scheduled for Maple St. Villa at 2:00 PM</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-24 bg-white">
+<div class="mx-auto max-w-7xl px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl" style="">You’re Losing Deals Every Day</h2>
+<p class="mt-4 text-slate-600" style=""><div>Most real estate agencies lose valuable leads simply because they don’t respond fast enough or fail to follow up consistently.</div></p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="rounded-2xl border border-slate-100 bg-slate-50/50 p-8 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="">timer_off</span>
+<h3 class="text-xl font-bold mb-3" style="">Leads go cold within minutes</h3>
+<p class="text-slate-600 leading-relaxed" style="">If you're not instant, you're losing them to competitors who are.</p>
+</div>
+<div class="rounded-2xl border border-slate-100 bg-slate-50/50 p-8 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="">notifications_paused</span>
+<h3 class="text-xl font-bold mb-3" style="">Agents can’t respond 24/7</h3>
+<p class="text-slate-600 leading-relaxed" style="">80% of sales require 5 follow-up calls. Most agents stop after the first attempt. Our AI never forgets.</p>
+</div>
+<div class="rounded-2xl border border-slate-100 bg-slate-50/50 p-8 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary mb-4" style="">layers_clear</span>
+<h3 class="text-xl font-bold mb-3" style="">Manual follow-ups get missed</h3>
+<p class="text-slate-600 leading-relaxed" style="">Paper notes and scattered emails mean valuable buyer data falls through the cracks of your CRM.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="py-24 bg-background-light">
+<div class="mx-auto max-w-7xl px-6">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+<span class="material-symbols-outlined text-primary mb-3" style="">chat_bubble</span>
+<h4 class="font-bold text-slate-900" style="">Instant Lead Response</h4>
+<p class="text-xs text-slate-500 mt-2" style="">Respond to every inquiry within seconds&nbsp; automatically.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+<span class="material-symbols-outlined text-primary mb-3" style="">fact_check</span>
+<h4 class="font-bold text-slate-900" style="">Automated Appointment Booking</h4>
+<p class="text-xs text-slate-500 mt-2" style="">Let clients book viewings directly into your calendar.</p>
+</div>
+</div>
+<div class="space-y-4 mt-8">
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+<span class="material-symbols-outlined text-primary mb-3" style="">event_available</span>
+<h4 class="font-bold text-slate-900" style="">AI Lead Qualification</h4>
+<p class="text-xs text-slate-500 mt-2" style="">Filter serious buyers based on budget, location, and timeline.</p>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+<span class="material-symbols-outlined text-primary mb-3" style="">auto_awesome</span>
+<h4 class="font-bold text-slate-900" style="">Smart Follow-Ups</h4>
+<p class="text-xs text-slate-500 mt-2" style="">Automatically re-engage leads who didn’t respond.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="text-4xl font-black text-slate-900 leading-tight mb-6" style="">Your AI-Powered Sales Assistant — Working 24/7</h2>
+<p class="text-slate-600 text-lg mb-8 leading-relaxed" style="">
+                        Our AI assistant acts as your 24/7 sales department. It qualifies every single lead, filters out the "window shoppers," and puts confirmed viewings directly onto your agents' calendars.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 font-semibold text-slate-700" style="">
+<span class="material-symbols-outlined text-green-500" style="">check_circle</span>
+                            Increase conversion rates by up to 300%
+                        </li>
+<li class="flex items-center gap-3 font-semibold text-slate-700" style="">
+<span class="material-symbols-outlined text-green-500" style="">check_circle</span>
+                            Save 15+ hours per agent every week
+                        </li>
+<li class="flex items-center gap-3 font-semibold text-slate-700" style="">
+<span class="material-symbols-outlined text-green-500" style="">check_circle</span>
+                            Consistent brand voice across all channels
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 bg-white overflow-hidden">
+<div class="mx-auto max-w-7xl px-6">
+<div class="text-center mb-20">
+<h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl" style="">How It Works</h2>
+<p class="mt-4 text-slate-600" style=""><div>Simple. Automated. Effective.</div></p>
+</div>
+<div class="relative flex flex-col md:flex-row justify-between gap-12">
+<div class="relative z-10 flex flex-col items-center text-center group flex-1">
+<div class="h-16 w-16 rounded-full bg-white border-2 border-primary flex items-center justify-center text-primary font-bold text-xl shadow-lg mb-6 group-hover:scale-110 transition-transform" style="">
+                        1
+                    </div>
+<h4 class="font-bold text-slate-900 mb-2" style="">A potential buyer submits an inquiry</h4>
+<p class="text-sm text-slate-500 px-4" style="">Link your Facebook, Zillow, and website leads.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center group flex-1">
+<div class="h-16 w-16 rounded-full bg-white border-2 border-primary flex items-center justify-center text-primary font-bold text-xl shadow-lg mb-6 group-hover:scale-110 transition-transform" style="">
+                        2
+                    </div>
+<h4 class="font-bold text-slate-900 mb-2" style="">AI responds instantly via chat or WhatsApp</h4>
+<p class="text-sm text-slate-500 px-4" style="">Our AI learns your properties and business rules.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center group flex-1">
+<div class="h-16 w-16 rounded-full bg-white border-2 border-primary flex items-center justify-center text-primary font-bold text-xl shadow-lg mb-6 group-hover:scale-110 transition-transform" style="">
+                        3
+                    </div>
+<h4 class="font-bold text-slate-900 mb-2" style="">The system qualifies the lead automatically</h4>
+<p class="text-sm text-slate-500 px-4" style="">AI chats with leads to confirm interest and budget.</p>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center group flex-1">
+<div class="h-16 w-16 rounded-full bg-white border-2 border-primary flex items-center justify-center text-primary font-bold text-xl shadow-lg mb-6 group-hover:scale-110 transition-transform" style="">
+                        4
+                    </div>
+<h4 class="font-bold text-slate-900 mb-2" style="">Qualified leads book a viewing directly</h4>
+<p class="text-sm text-slate-500 px-4" style="">Agents only speak with qualified, ready buyers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Demo Block -->
+<section class="py-24 bg-slate-900 text-white">
+<div class="mx-auto max-w-5xl px-6 text-center">
+<h2 class="text-3xl font-bold mb-12" style="">See How It Works in Real Time</h2>
+<div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl group">
+<img class="w-full h-full object-cover" data-alt="Modern house interior as video thumbnail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ykd54jfdrT0drL_hLb_JY7fi5m6QFciFSFWhuK_u5vtJbnriElOqyCZVIEP-6thQZRYovUtM8v2f2tAzAkQMBsxdv8eWXyKkMmfKeVsz7ldIX9yV6JB9kNP2-SjQo31r8JGwVLzhn6dKaKyjUMDxiSo-MAO01MY2SHcmO7dpH305i2zajO8Nfpl6EePxnZgMkvRv6tnZxX4Gs57d77PQ3EH_YMTVbTyR5-cF0meZGaET5SGBt1TBT2tBjnyiS-ZzBSMwRfnb5WQ" style="">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/30 transition-colors">
+<div class="h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="mt-12 flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all" style="">Start Your Free Trial</button>
+<button class="border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all" style="">Schedule a 1-on-1 Tour</button>
+</div>
+</div>
+</section>
+<!-- Results/Stats -->
+<section class="py-24 bg-white">
+<div class="mx-auto max-w-7xl px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-primary/5 p-10 rounded-3xl text-center">
+<div class="text-5xl font-black text-primary mb-2" style="">10x</div>
+<div class="text-slate-900 font-bold text-lg mb-2" style="">Faster Response</div>
+<p class="text-slate-500 text-sm" style="">Response times drop from hours to seconds.</p>
+</div>
+<div class="bg-primary/5 p-10 rounded-3xl text-center">
+<div class="text-5xl font-black text-primary mb-2" style="">65%</div>
+<div class="text-slate-900 font-bold text-lg mb-2" style="">More Bookings</div>
+<p class="text-slate-500 text-sm" style="">Automated follow-ups capture 65% more viewings.</p>
+</div>
+<div class="bg-primary/5 p-10 rounded-3xl text-center">
+<div class="text-5xl font-black text-primary mb-2" style="">20h</div>
+<div class="text-slate-900 font-bold text-lg mb-2" style="">Time Saved</div>
+<p class="text-slate-500 text-sm" style="">Per agent, per month on qualifying cold leads.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Who It's For -->
+<section class="py-24 bg-background-light">
+<div class="mx-auto max-w-7xl px-6">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-slate-900" style="">Built for Every Scalable Entity</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern corporate office for real estate agencies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9k5_XKy9rxzChhkuR1o6XY9B4a0nFGTkmbGg4az6sqWkPq3H7Lgj8a_P7Oz8mTOFCuwnz4y32ZlN6FsSKm--2Mb-EHYOOD5rSdL8phYCrG0mf51bmbOn5HFFbIhLa5UntL8DsByyRfrFQgtOQ04ga7bn38xntR9IhCNbP1ofE_ONFX7OTqzK43izNZ9__XL7maYOr1arqlpCe4N6ZIOB3NhpX0P8WzsfAOCzIDZp3Eq7HltQ9VTLrj475hFQIW8Bc_HMbn4vHcfM" style="">
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3" style="">Agencies</h4>
+<p class="text-slate-600 text-sm leading-relaxed" style="">Empower your entire team with a centralized AI brain that handles the top-of-funnel grunt work.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Skyscraper glass building for real estate brokers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9SFZW0PZu5UtpLFjK_MaXlHiv0CDTP7gXrc7bM3hjHZ_zq2BpRVzxENStEqf53jdSew9FJfHT6lL8MqwKXtYBFProOGflBaWLtTUULDM6NV9sviclMVxAagru0pg7WGCJVI2QgbPvQ-YXjNMZx2nA4vupmtts7SHGwWUtRijhmFbt-P2d7WNw2Oiy0RXRer2QGJW2bNXTKiJFfS0SoV-_At1n7fwy6LRJlqwfKhbffPYAd4DKjvpi3MC-Lnf1PJ4es6P71nMUMXI" style="">
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3" style="">Individual Brokers</h4>
+<p class="text-slate-600 text-sm leading-relaxed" style="">Scale yourself without hiring an assistant. Handle 5x more leads without burning out.</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:-translate-y-1 transition-transform">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Construction site for developers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGAmzL-WApQtratZDZz44lDr9-1LbMu0eNfekR14QpBBlNycaKf-EgjZp9xMDXPWCVw8WR3Y-cTsMdc1tWqr1qX331L-bkpYb5mqOD8oxXKDAodcpzCYC_TF7-sLRgsKwyiRA7BysvAFgwKnfvhuHK6zW8jRR4jZlGZmWyH0_RMksYAidXqEho3_3vQzVL-JGt0tT3m3CBIA-3ugdacgbo0raRrooL_aqX1_sn4jmrJAWutMdpYVOY7nCehqxqD0gwVTgG4u4rEck" style="">
+</div>
+<div class="p-8">
+<h4 class="text-xl font-bold mb-3" style="">Property Developers</h4>
+<p class="text-slate-600 text-sm leading-relaxed" style="">Manage off-plan interest at scale and prioritize investors based on verified capital.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-white">
+<div class="mx-auto max-w-7xl px-6">
+<h2 class="text-3xl font-bold text-center mb-16" style="">Loved by Industry Leaders</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-4">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+</div>
+<p class="text-slate-600 italic" style="">"PropAI changed our business. We used to lose leads over the weekend; now we wake up on Monday with a calendar full of viewings."</p>
+<div class="flex items-center gap-3 mt-4">
+<img class="h-10 w-10 rounded-full object-cover" data-alt="Sarah Jenkins profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4dLPHoE6SuCe9_9AgySYS85pGNwdb-BM-P_k9HFx-iWt8pbbd1OeXdm0GzQlnx7LVaZC3Zxoxi5v7VCnMj6O-5BWFc13L_8uM0_11zLXT2fKJXLZVX0rCi7rk5oUWaV7LEWiFBd47Zyv3GSCWNyAgVLKT_kvfzRypqTkRRvG7TKNcDZKYOhM-aKzYuD9Ny1LDflWZZY5Ri9dsnWaDKE6Ykn0BdNORaNBXerT1ml90uDOeI3TUFx02yu6TuM17I5ZiHnKpSzfkCS0" style="">
+<div>
+<div class="font-bold text-sm" style="">Sarah Jenkins</div>
+<div class="text-xs text-slate-500" style="">Director, Prime Realty</div>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-4">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+</div>
+<p class="text-slate-600 italic" style="">"The lead qualification is scary accurate. It knows exactly which questions to ask to filter out the time-wasters."</p>
+<div class="flex items-center gap-3 mt-4">
+<img class="h-10 w-10 rounded-full object-cover" data-alt="David Chen profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBW9xzQwJEAZG_F2KTn3JjCMJPCMaGZHiPRWZDhWyyxnwK0I_NOLmQcQ7K4V8_C18VkPtBPR3T4rx6XdaIdAz9FxOWaYS93VFSJsOUyztGKCKmZt7LJ66rLdQnyuYHy-ayGmx0tm3Zt7dKHxnWCCiA2f1jde8oys2fnLz02WCZQXr8rpXnIio8byuI0MoovTnrAuhkH6mk0EugRXXdpzChzEhOUbJy9J1sGF-IvWH2CKjYsRFxIw6XZpRTSDf4BieQC2cJ8Y1djpo" style="">
+<div>
+<div class="font-bold text-sm" style="">David Chen</div>
+<div class="text-xs text-slate-500" style="">Senior Broker, Urban Spaces</div>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-4">
+<div class="flex text-yellow-400">
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+<span class="material-symbols-outlined font-fill" style="">star</span>
+</div>
+<p class="text-slate-600 italic" style="">"Implementation was done in a day. It integrated perfectly with our existing CRM and started booking meetings within 4 hours."</p>
+<div class="flex items-center gap-3 mt-4">
+<img class="h-10 w-10 rounded-full object-cover" data-alt="Elena Rodriguez profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXtec3UAa0jPzUdulHTGPuXy_ksgx7m4Dw33QLD-qdrKXWE3d7VCZHHBxmbEyshMh1ruqn5yloMvHaS4Ntau3nOBDO4-I6ebxATUVnE4mLppXtkmJP1A2jt-qJ-ndLH_a2M2aN4FohhRoTDxUkks00DLAdweNjJUMG37bIJ5tdPdhrLdH5HMocTp4JYHrFcgnrZ5E7k-3gh7NeL0otkW4oTtGmbgny-cb5Dn476Y-CWxBrwtHzEnCxOsqa-P7HnWrQctmSqUEojsI" style="">
+<div>
+<div class="font-bold text-sm" style="">Elena Rodriguez</div>
+<div class="text-xs text-slate-500" style="">COO, Global Estates</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 px-6">
+<div class="mx-auto max-w-7xl rounded-[2.5rem] bg-primary px-8 py-16 text-center text-white relative overflow-hidden">
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 h-full w-1/3 bg-white/5 skew-x-12 translate-x-1/2"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl font-black mb-6 md:text-5xl" style="">Ready to Automate Your Success?</h2>
+<p class="text-white/80 text-lg mb-10" style="">Join 500+ agencies and start closing more deals with half the effort. Get started with a 14-day free trial.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-10 py-4 rounded-xl font-black text-lg hover:bg-slate-50 transition-colors shadow-xl" style="">Book Free Demo Now</button>
+<button class="bg-primary-dark/20 border border-white/30 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-colors" style="">Contact Sales</button>
+</div>
+<p class="mt-8 text-sm text-white/60 italic" style="">No credit card required. Cancel anytime.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light pt-20 pb-10 border-t border-slate-200">
+<div class="mx-auto max-w-7xl px-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+<div class="col-span-2 lg:col-span-2">
+<div class="flex items-center gap-2.5 mb-6">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl" style="">domain_verification</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900" style="">Logo</span>
+</div>
+<p class="text-slate-500 text-sm max-w-xs leading-relaxed" style="">
+                    The #1 AI lead management platform designed specifically for high-growth real estate teams.
+                </p>
+<div class="flex gap-4 mt-6">
+<a class="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">share</span>
+</a>
+<a class="h-10 w-10 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 hover:text-primary transition-colors" href="#" style="">
+<span class="material-symbols-outlined" style="">public</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6" style="">Product</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Features</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Integrations</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Pricing</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Roadmap</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6" style="">Company</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="" style=""><a class="hover:text-primary" href="#" style="">About Us</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Careers</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Success Stories</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6" style="">Legal</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Privacy Policy</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">Terms of Service</a></li>
+<li class="" style=""><a class="hover:text-primary" href="#" style="">GDPR Compliance</a></li>
+</ul>
+</div>
+</div>
+<div class="mx-auto max-w-7xl px-6 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-xs" style="">© 2024 AI Automation Inc. All rights reserved.</p>
+<div class="flex gap-6 text-xs text-slate-400">
+<span class="" style="">📍 New York City, NY</span>
+<span class="" style="">📧 hello@ai.com</span>
+</div>
+</div>
+</footer>
+</body></html>
